@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Profile photo placeholder">
+  <defs><pattern id="d" width="16" height="16" patternUnits="userSpaceOnUse"><rect x="7" y="7" width="1.5" height="1.5" fill="#aeb1a5"/></pattern></defs>
+  <rect width="400" height="500" fill="#e2e5da"/>
+  <rect width="400" height="500" fill="url(#d)"/>
+  <circle cx="200" cy="200" r="78" fill="#b4bba6"/>
+  <path d="M60 500c0-92 63-160 140-160s140 68 140 160z" fill="#b4bba6"/>
+  <text x="200" y="470" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" letter-spacing="3" fill="#595c53">PHOTO PLACEHOLDER</text>
+</svg>
