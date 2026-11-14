@@ -9,11 +9,12 @@ From this folder: `python3 -m http.server 8000`, then open http://localhost:8000
 ## Deploy
 Upload the whole folder (index.html, css/, js/, assets/) to any static host
 (GitHub Pages, Netlify, Vercel, Cloudflare Pages). When you know the final address,
-add the canonical and og:url tags (see the comment in the <head> of index.html).
+update the canonical and og:url tags in the <head> of index.html (currently https://kurtthe.github.io/).
 
 ## Structure
 - index.html — all content (works fully without JavaScript)
 - css/styles.css — design tokens at the top (:root), then components; print styles at the end
+- assets/work/*.webp — product screens (Trak, Burdens, Flashing Designer) cropped from the public App Store listings
 - assets/profile-placeholder.svg — TEMPORARY photo. Replace with your own (e.g. assets/profile.jpg, 800×1000) and update the <img src> in index.html
 - js/main.js — progressive enhancements: mobile menu, Brisbane clock, scroll progress,
   label decode effect, count-up stats, scroll reveals, hero dot field, role-fit tabs and filter,

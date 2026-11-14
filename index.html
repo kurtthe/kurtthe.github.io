@@ -8,6 +8,8 @@
 <meta property="og:title" content="Jefferson Solano — Beyond the CV">
 <meta property="og:type" content="website">
 <meta property="og:description" content="Digital experiences that work for people. Selected frontend work, experience and the thinking behind it.">
+<meta property="og:url" content="https://kurtthe.github.io/">
+<link rel="canonical" href="https://kurtthe.github.io/">
 <meta name="theme-color" content="#eeeee8">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/styles.css">
@@ -45,10 +47,28 @@
         </figure>
       </div>
       <div class="hero-bottom">
-        <div class="exhibit"><span class="asterisk" aria-hidden="true">✳</span><span class="mono">PEOPLE FIRST.<br>THOUGHTFULLY BUILT.</span></div>
+        <figure class="editor" aria-hidden="true" data-editor>
+          <div class="editor-bar mono"><i></i><i></i><i></i><span>Jefferson.jsx</span><span class="editor-status">● live</span></div>
+          <pre class="code mono"><code><span class="k">const</span> <span class="f">Jefferson</span> = () =&gt; (
+  &lt;<span class="t">Developer</span>
+    <span class="a">role</span>=<span class="s">"Front End"</span>
+    <span class="a">city</span>=<span class="s">"Brisbane"</span>
+    <span class="a">stack</span>={[<span class="s">'React'</span>, <span class="s">'Next.js'</span>, <span class="s">'RN'</span>]}
+    <span class="a">a11y</span>=<span class="s">"WCAG"</span>
+  /&gt;
+);</code></pre>
+          <div class="preview">
+            <span class="preview-label mono">Rendered output</span>
+            <div class="dev-card">
+              <b data-p="role">Front End Developer</b>
+              <span class="mono" data-p="city">Brisbane, QLD · 5+ yrs</span>
+              <ul class="mono"><li data-p="react">React</li><li data-p="next">Next.js</li><li data-p="rn">React Native</li><li data-p="wcag">WCAG</li></ul>
+            </div>
+          </div>
+        </figure>
         <div>
           <h2>I build digital experiences<br>that work for people.</h2>
-          <p>From complex web applications to accessible, content-driven websites, I turn technical challenges into practical solutions that are easy to use.</p>
+          <p>Five years turning complex requirements into clear, accessible web and mobile products.</p>
           <div class="actions">
             <a class="button" href="#work">Explore my work <span aria-hidden="true">↘</span></a>
             <a class="text-link" href="#fit">See how I match the role <span aria-hidden="true">→</span></a>
@@ -80,67 +100,134 @@
     <div>
       <h2 id="about-title">MORE THAN<br>CODE.</h2>
       <p class="lead">I like making complicated things feel simple.</p>
-      <p>I’m Jefferson, a frontend developer with more than five years of experience building and improving web and mobile applications. I translate complex requirements into useful interfaces, working closely with designers, content specialists, developers and subject-matter experts.</p>
-      <p>My work spans React.js, Next.js, JavaScript, HTML5, CSS3 and RESTful APIs, alongside content-driven websites, accessibility, SEO, analytics and performance optimisation.</p>
-      <div class="small-note">A practical mindset. A collaborative approach. A reason behind every detail.</div>
+      <p>I’m Jefferson, a frontend developer with 5+ years building web and mobile products with React.js, Next.js and React Native. I turn complex requirements into clear, accessible interfaces, working closely with designers, content teams and specialists.</p>
     </div>
   </section>
 
   <section id="work" class="section" aria-labelledby="work-title">
     <div class="section-heading">
       <div><div class="label mono" data-decode>02 / SELECTED WORK</div><h2 id="work-title">THE WORK.<br>THE THINKING.</h2></div>
-      <p>Three projects. Different challenges.<br>Open an exhibit to explore the detail.</p>
+      <p>Three products, shipped to real users.<br>Screens first, detail if you want it.</p>
     </div>
 
-    <details class="project">
-      <summary><span class="project-number mono">01</span><span><span class="project-name">TRAK</span><span class="project-title mono">MAKING RELEASES FASTER</span></span><span class="project-toggle" aria-hidden="true">↗</span></summary>
-      <div class="project-content">
-        <div class="role mono">Senior Frontend Developer · Trak, Melbourne · Sep 2023 – Jun 2026</div>
-        <div class="case-grid">
-          <div><h3>Challenge</h3><p>Even a very small mobile change needed a fresh build and app-store approval, so releases could take one to two days.</p></div>
-          <div><h3>My contribution</h3><p>I proposed Microsoft App Center CodePush and led its implementation, alongside my work on React.js and Next.js web experiences and React Native mobile features for Trak’s job management platform.</p></div>
-          <div><h3>Approach</h3><p>Git-based code verification came before every eligible over-the-air release. On the web side I built reusable components, integrated RESTful APIs and ran Lighthouse reviews to improve usability, accessibility and performance.</p></div>
-          <div><h3>Outcome</h3><p>Eligible updates could reach production in about 10 minutes. Customers received suitable fixes sooner. Native changes still followed the normal build and store process.</p></div>
+    <article class="project" aria-labelledby="p1">
+      <header class="project-head">
+        <span class="project-number mono">01</span>
+        <div><h3 class="project-name" id="p1">TRAK</h3><p class="project-title mono">JOB MANAGEMENT · WEB + MOBILE · 2023–2026</p></div>
+        <a class="visit" href="https://www.trak.co" target="_blank" rel="noopener">trak.co <span aria-hidden="true">↗</span><span class="sr-only">(opens in a new tab)</span></a>
+      </header>
+      <p class="project-line">Senior Frontend Developer. I proposed and led CodePush, so eligible updates reach users in about 10 minutes instead of 1–2 days.</p>
+      <div class="gallery-wrap">
+        <ul class="gallery" role="list" tabindex="0" aria-label="Trak app screens">
+          <li><img src="assets/work/trak-login.webp" alt="Trak app welcome screen: every job in one app" width="520" height="1133" loading="lazy" decoding="async"></li>
+          <li><img src="assets/work/trak-dashboard.webp" alt="Trak dashboard with tasks, activity, sign on and web app" width="520" height="1133" loading="lazy" decoding="async"></li>
+          <li><img src="assets/work/trak-schedule.webp" alt="Trak schedule showing the day job by job" width="520" height="1133" loading="lazy" decoding="async"></li>
+          <li><img src="assets/work/trak-swms.webp" alt="Trak safety screen for selecting SWMS templates" width="520" height="1133" loading="lazy" decoding="async"></li>
+        </ul>
+        <div class="gallery-nav mono" hidden><button type="button" data-dir="-1" aria-label="Previous screens">←</button><button type="button" data-dir="1" aria-label="Next screens">→</button></div>
+      </div>
+      <div class="pipeline" data-pipeline>
+        <div class="pipe-head"><span class="mono">Release paths, side by side</span><button class="run mono" type="button" hidden>▶ Run a release</button></div>
+        <div class="lane store" style="--dur:6s">
+          <span class="lane-name mono">App store</span>
+          <div class="track"><ol class="steps mono"><li>Commit</li><li>Build</li><li>Store review</li><li>Users</li></ol><i class="packet"></i></div>
+          <span class="lane-time mono">1–2 days</span>
         </div>
-        <div class="timeline-viz" aria-hidden="true">
-          <div class="bar before"><span class="mono">Before · 1–2 days</span></div>
-          <div class="bar after"><span class="mono">After · ~10 min</span></div>
+        <div class="lane ota" style="--dur:1.4s">
+          <span class="lane-name mono">CodePush</span>
+          <div class="track"><ol class="steps mono"><li>Commit</li><li>Git verify</li><li>OTA push</li><li>Users</li></ol><i class="packet"></i></div>
+          <span class="lane-time mono">~10 min</span>
+        </div>
+        <p class="pipe-note">Eligible JavaScript changes only. Native changes still follow the store process.</p>
+      </div>
+      <details class="case">
+        <summary>Read the case study <span aria-hidden="true">+</span></summary>
+        <div class="case-grid">
+          <div><h4>Challenge</h4><p>Even a very small mobile change needed a fresh build and app-store approval, so releases could take one to two days.</p></div>
+          <div><h4>My contribution</h4><p>I proposed Microsoft App Center CodePush and led its implementation, alongside React.js and Next.js web work and React Native features.</p></div>
+          <div><h4>Approach</h4><p>Git-based code verification came before every eligible over-the-air release. On the web I built reusable components, integrated RESTful APIs and ran Lighthouse reviews.</p></div>
+          <div><h4>Outcome</h4><p>Eligible updates reached production in about 10 minutes, so customers received suitable fixes sooner.</p></div>
         </div>
         <p class="tech mono">React.js / Next.js / React Native / RESTful APIs / CodePush / Lighthouse</p>
-        <a class="visit" href="https://www.trak.co" target="_blank" rel="noopener">Visit Trak <small>trak.co</small> <span aria-hidden="true">↗</span><span class="sr-only">(opens in a new tab)</span></a>
-      </div>
-    </details>
+      </details>
+    </article>
 
-    <details class="project">
-      <summary><span class="project-number mono">02</span><span><span class="project-name">BURDENS</span><span class="project-title mono">ONE SERVICE, TWO CHANNELS</span></span><span class="project-toggle" aria-hidden="true">↗</span></summary>
-      <div class="project-content">
-        <div class="role mono">Front End Developer · Digital Basis, Melbourne · Dec 2020 – Sep 2023</div>
+    <article class="project" aria-labelledby="p2">
+      <header class="project-head">
+        <span class="project-number mono">02</span>
+        <div><h3 class="project-name" id="p2">BURDENS</h3><p class="project-title mono">TRADE PORTAL · WEB + MOBILE · 2020–2023</p></div>
+        <a class="visit" href="https://burdensbathrooms.com.au/" target="_blank" rel="noopener">burdensbathrooms.com.au <span aria-hidden="true">↗</span><span class="sr-only">(opens in a new tab)</span></a>
+      </header>
+      <p class="project-line">Front End Developer at Digital Basis. Trade customers browse products, order, find stores and check invoices and statements on the web or in the app.</p>
+      <div class="gallery-wrap">
+        <ul class="gallery" role="list" tabindex="0" aria-label="Burdens trade portal screens">
+          <li><img src="assets/work/burdens-dashboard.webp" alt="Burdens dashboard with search, store finder and transactions" width="520" height="1133" loading="lazy" decoding="async"></li>
+          <li><img src="assets/work/burdens-categories.webp" alt="Burdens product categories" width="520" height="1133" loading="lazy" decoding="async"></li>
+          <li><img src="assets/work/burdens-products.webp" alt="Burdens product list with RRP and customer price" width="520" height="1133" loading="lazy" decoding="async"></li>
+          <li><img src="assets/work/burdens-account.webp" alt="Burdens account balance and payment details" width="520" height="1133" loading="lazy" decoding="async"></li>
+          <li><img src="assets/work/burdens-stores.webp" alt="Burdens store finder map" width="520" height="1133" loading="lazy" decoding="async"></li>
+        </ul>
+        <div class="gallery-nav mono" hidden><button type="button" data-dir="-1" aria-label="Previous screens">←</button><button type="button" data-dir="1" aria-label="Next screens">→</button></div>
+      </div>
+      <details class="case">
+        <summary>Read the case study <span aria-hidden="true">+</span></summary>
         <div class="case-grid">
-          <div><h3>Challenge</h3><p>Customers needed to browse products, order and check their accounts on the website or in a mobile app. The work was more than shrinking screens: the same tasks had to make sense in different contexts.</p></div>
-          <div><h3>My contribution</h3><p>I helped deliver product browsing and filtering, shopping-cart orders, account information, invoices and statements.</p></div>
-          <div><h3>Approach</h3><p>We built a new product around an existing web service. I built responsive interfaces and reusable components, integrated RESTful APIs and tested across devices to keep interactions consistent.</p></div>
-          <div><h3>Outcome</h3><p>Customers could choose the channel that suited them and complete the same core tasks on either. No sales or adoption figures are claimed.</p></div>
+          <div><h4>Challenge</h4><p>The same tasks had to make sense on the website and in a mobile app, which is more than shrinking screens.</p></div>
+          <div><h4>My contribution</h4><p>Product browsing and filtering, shopping-cart orders, account information, invoices and statements.</p></div>
+          <div><h4>Approach</h4><p>A new product around an existing web service: responsive interfaces, reusable components, RESTful APIs and cross-device testing.</p></div>
+          <div><h4>Outcome</h4><p>Customers could complete the same core tasks on either channel. No sales or adoption figures are claimed.</p></div>
         </div>
-        <p class="tech mono">React.js / React Native / JavaScript / Responsive UI / RESTful APIs / Reusable components</p>
-        <a class="visit" href="https://burdensbathrooms.com.au/" target="_blank" rel="noopener">Visit Burdens <small>burdensbathrooms.com.au</small> <span aria-hidden="true">↗</span><span class="sr-only">(opens in a new tab)</span></a>
-      </div>
-    </details>
+        <p class="tech mono">React.js / React Native / JavaScript / Responsive UI / RESTful APIs</p>
+      </details>
+    </article>
 
-    <details class="project">
-      <summary><span class="project-number mono">03</span><span><span class="project-name">FLASHING DESIGNER</span><span class="project-title mono">COMPLEX LOGIC, CLEAR INTERFACES</span></span><span class="project-toggle" aria-hidden="true">↗</span></summary>
-      <div class="project-content">
-        <div class="role mono">Front End Developer · Digital Basis · Burdens Flashing Designer</div>
+    <article class="project" aria-labelledby="p3">
+      <header class="project-head">
+        <span class="project-number mono">03</span>
+        <div><h3 class="project-name" id="p3">FLASHING DESIGNER</h3><p class="project-title mono">MOBILE · COMPLEX LOGIC, CLEAR INTERFACE</p></div>
+        <a class="visit" href="https://apps.apple.com/au/app/burdens-flashing-designer/id6449658670" target="_blank" rel="noopener">App Store <span aria-hidden="true">↗</span><span class="sr-only">(opens in a new tab)</span></a>
+      </header>
+      <p class="project-line">Customers draw a custom metal flashing, set lengths and angles, and order it. I built the calculation features, validated with a physicist and a mathematician.</p>
+      <div class="gallery-wrap">
+        <ul class="gallery" role="list" tabindex="0" aria-label="Flashing Designer screens">
+          <li><img src="assets/work/flashing-new.webp" alt="Create a new flashing: name, colour, quantity and length" width="520" height="1133" loading="lazy" decoding="async"></li>
+          <li><img src="assets/work/flashing-draw.webp" alt="Draw the shape of the flashing on a grid" width="520" height="1133" loading="lazy" decoding="async"></li>
+          <li><img src="assets/work/flashing-edge-type.webp" alt="Select an edge type, with lengths and angles shown" width="520" height="1133" loading="lazy" decoding="async"></li>
+          <li><img src="assets/work/flashing-paint-edge.webp" alt="Specify which edge is painted" width="520" height="1133" loading="lazy" decoding="async"></li>
+        </ul>
+        <div class="gallery-nav mono" hidden><button type="button" data-dir="-1" aria-label="Previous screens">←</button><button type="button" data-dir="1" aria-label="Next screens">→</button></div>
+      </div>
+      <div class="flash-demo" data-flash hidden>
+        <div class="flash-canvas">
+          <svg viewBox="0 0 400 240" role="img" aria-labelledby="flash-desc"><title id="flash-desc">Flashing profile sketch with dimensions</title>
+            <defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="currentColor" stroke-opacity=".12"/></pattern></defs>
+            <rect width="400" height="240" fill="url(#grid)"/>
+            <polyline class="paint" fill="none" points=""/>
+            <polyline class="shape" fill="none" points=""/>
+            <g class="labels mono"></g>
+          </svg>
+        </div>
+        <div class="flash-controls">
+          <p class="flash-intro mono">Try it: a simplified version of the drawing tool</p>
+          <div class="ctl"><label for="fA">A · upstand</label><output for="fA" data-o="a">150 mm</output><input type="range" id="fA" min="40" max="200" step="5" value="150"></div>
+          <div class="ctl"><label for="fB">B · base</label><output for="fB" data-o="b">300 mm</output><input type="range" id="fB" min="120" max="400" step="5" value="300"></div>
+          <div class="ctl"><label for="fC">C · drip</label><output for="fC" data-o="c">50 mm</output><input type="range" id="fC" min="20" max="90" step="5" value="50"></div>
+          <div class="ctl"><label for="fT">C · bend angle</label><output for="fT" data-o="t">80°</output><input type="range" id="fT" min="45" max="135" step="5" value="80"></div>
+          <dl class="flash-out mono" aria-live="polite"><div><dt>Girth</dt><dd data-o="girth">500 mm</dd></div><div><dt>Bends</dt><dd>2</dd></div></dl>
+        </div>
+      </div>
+      <details class="case">
+        <summary>Read the case study <span aria-hidden="true">+</span></summary>
         <div class="case-grid">
-          <div><h3>Challenge</h3><p>Mathematical calculations and algorithmic requirements had to become understandable, reliable application features.</p></div>
-          <div><h3>My contribution</h3><p>I built the calculation-related functionality and worked with a physicist and a mathematician to understand and check the algorithms.</p></div>
-          <div><h3>Approach</h3><p>Ask the right questions early and validate with specialists instead of assuming. I also helped move the app from React Native with Expo to React Native without Expo.</p></div>
-          <div><h3>Outcome</h3><p>Specialist requirements became working mobile functionality, with accuracy and validation guiding the implementation.</p></div>
+          <div><h4>Challenge</h4><p>Mathematical calculations and algorithmic requirements had to become reliable, understandable features.</p></div>
+          <div><h4>My contribution</h4><p>I built the calculation-related functionality and worked with a physicist and a mathematician to check the algorithms.</p></div>
+          <div><h4>Approach</h4><p>Ask the right questions early and validate with specialists. I also helped move the app from React Native with Expo to bare React Native.</p></div>
+          <div><h4>Outcome</h4><p>Specialist requirements became working mobile functionality, with accuracy and validation guiding the build.</p></div>
         </div>
         <p class="tech mono">React Native / Expo migration / JavaScript / Algorithmic calculations</p>
-        <a class="visit" href="https://apps.apple.com/au/app/burdens-flashing-designer/id6449658670" target="_blank" rel="noopener">View on the App Store <small>Burdens Flashing Designer</small> <span aria-hidden="true">↗</span><span class="sr-only">(opens in a new tab)</span></a>
-      </div>
-    </details>
-    <div class="work-foot mono"><span>REAL CHALLENGES. PRACTICAL SOLUTIONS.</span><span>2020 — 2026</span></div>
+      </details>
+    </article>
+    <div class="work-foot mono"><span>REAL PRODUCTS. REAL USERS.</span><span>2020 — 2026</span></div>
   </section>
 
   <section id="experience" class="section" aria-labelledby="exp-title">
@@ -154,11 +241,9 @@
         <div>
           <h3>Senior Frontend Developer <span>· <a href="https://www.trak.co" target="_blank" rel="noopener">Trak</a>, Melbourne</span></h3>
           <ul>
-            <li>Developed React.js and Next.js web experiences alongside React Native features for a job management platform.</li>
-            <li>Built responsive, reusable components and integrated RESTful APIs across web and mobile.</li>
-            <li>Improved usability, accessibility and performance through semantic HTML, refactoring, cross-browser testing and Lighthouse reviews.</li>
-            <li>Worked with designers and stakeholders on UI/UX implementation and CMS-driven content updates.</li>
-            <li>Proposed and led App Center CodePush: eligible releases in ~10 minutes instead of 1–2 days.</li>
+            <li>React.js and Next.js web experiences alongside React Native features for a job management platform.</li>
+            <li>Reusable components, RESTful APIs, Lighthouse reviews and accessibility improvements.</li>
+            <li>Proposed and led CodePush: eligible releases in ~10 minutes instead of 1–2 days.</li>
           </ul>
         </div>
       </li>
@@ -167,10 +252,9 @@
         <div>
           <h3>Front End Developer <span>· Digital Basis, Melbourne</span></h3>
           <ul>
-            <li>Built new web and mobile products with React.js, Next.js, React Native, JavaScript, HTML5, CSS3 and Node.js.</li>
-            <li>Implemented reusable UI components, RESTful API integrations, CMS publishing workflows and accessible interface patterns.</li>
-            <li>Applied technical SEO, Lighthouse checks, Google Analytics and Matomo; used Storybook and Fractal for component consistency.</li>
-            <li>Collaborated with designers, developers and specialists to solve complex requirements and test across devices.</li>
+            <li>New web and mobile products with React.js, Next.js, React Native and Node.js.</li>
+            <li>Reusable UI components with Storybook and Fractal, CMS workflows and accessible patterns.</li>
+            <li>Technical SEO, Google Analytics and Matomo, working closely with designers and specialists.</li>
           </ul>
         </div>
       </li>
@@ -208,7 +292,7 @@
 
     <div class="why-intro">
       <p class="lead">Queensland Museum looks after 15.2 million objects, specimens and stories, shared across four museums and online.</p>
-      <p>The Digital Solutions team is building a modern, API-driven platform with a headless CMS to connect people with those collections. I want to use what I’ve learned building web and mobile products for something with a clear public purpose: helping people explore collections, learn from stories and find information easily.</p>
+      <p>The Digital Solutions team is moving to an API-driven platform with a headless CMS. I want to bring my web and mobile experience to work with a clear public purpose.</p>
     </div>
     <ul class="why">
       <li><span class="n">01 · PURPOSE</span><h4>Public-facing work that matters</h4><p>I enjoy interfaces that look good, work reliably and make sense to the people using them. Visitors, students and researchers deserve that.</p></li>
