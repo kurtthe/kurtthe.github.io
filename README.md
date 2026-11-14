@@ -1,30 +1,47 @@
 # Jefferson Solano — Beyond the CV
 
-Personal portfolio for the Queensland Museum Front End Web Developer (AO6) application (QM705871).
-Plain HTML, CSS and vanilla JavaScript. No dependencies, no build step, no tracking.
+Personal portfolio for the Queensland Museum Front End Web Developer (AO6) application.
+Built with **Next.js (App Router) + TypeScript**, exported as a static site and deployed to GitHub Pages.
+
+Live: https://kurtthe.github.io
 
 ## Run locally
-From this folder: `python3 -m http.server 8000`, then open http://localhost:8000
+Requires Node.js 20 or newer.
 
-## Deploy
-Upload the whole folder (index.html, css/, js/, assets/) to any static host
-(GitHub Pages, Netlify, Vercel, Cloudflare Pages). When you know the final address,
-update the canonical and og:url tags in the <head> of index.html (currently https://kurtthe.github.io/).
+```bash
+npm install
+npm run dev        # http://localhost:3000 with hot reload
+npm run build      # static export to ./out
+npm start          # serves ./out at http://localhost:3000
+```
 
 ## Structure
-- index.html — all content (works fully without JavaScript)
-- css/styles.css — design tokens at the top (:root), then components; print styles at the end
-- assets/work/*.webp — product screens (Trak, Burdens, Flashing Designer) cropped from the public App Store listings
-- assets/profile-placeholder.svg — TEMPORARY photo. Replace with your own (e.g. assets/profile.jpg, 800×1000) and update the <img src> in index.html
-- js/main.js — progressive enhancements: mobile menu, Brisbane clock, scroll progress,
-  label decode effect, count-up stats, scroll reveals, hero dot field, role-fit tabs and filter,
-  copy email, print-as-résumé
+```
+app/            layout (metadata, structured data), page, global CSS
+components/     one component per section + interactive pieces
+                (CodeEditor, Gallery, Pipeline, FlashDemo, RoleFit, Header …)
+data/content.ts all copy: projects, experience, requirements, evidence
+lib/            asset() base-path helper, useInView hook
+public/assets/  favicon, profile photo, product screens (webp)
+.github/        GitHub Actions workflow that builds and deploys on push to main
+```
 
-## Motion
-All motion is disabled with prefers-reduced-motion. The hero dot field only animates on
-mouse/trackpad devices and only while the hero is visible.
+Content lives in `data/content.ts`, separate from the components. That file is the layer a
+headless CMS (e.g. Sanity) would replace.
 
-## Content notes
-- Every claim comes from the CV and Statement of Suitability supplied for QM705871.
-- Headless CMS is shown as "Transferable", matching the statement.
-- Phone number, street address and referee details are intentionally NOT published.
+## Edit
+- Text: `data/content.ts`
+- Photo: replace `public/assets/profile-placeholder.svg` (4:5, e.g. 800×1000) and update the path in `components/Hero.tsx`
+- Styles and design tokens: `app/globals.css` (tokens at the top in `:root`)
+
+## Deploy
+Push to `main`. The workflow in `.github/workflows/deploy.yml` runs `npm ci`, `npm run build`
+and publishes `./out`. One-time setup: **Settings → Pages → Source: GitHub Actions**.
+
+If the site is served from a sub-folder (`https://user.github.io/repo-name/`), add a repository
+variable `BASE_PATH` = `/repo-name` (Settings → Secrets and variables → Actions → Variables).
+
+## Accessibility and motion
+Semantic landmarks and headings, visible focus states, ARIA tabs with arrow-key support,
+alt text on every product screen. All motion stops with `prefers-reduced-motion`.
+Automated checks don't replace manual keyboard and screen-reader testing.
